@@ -7,11 +7,11 @@ options.add_argument("user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0
 options.add_argument("--disable-blink-features=AutomationControlled")
 
 # driver = webdriver.Chrome(
-#     executable_path="/home/cain/PycharmProjects/youtube/undetected_chrome/chromedriver",
+#     executable_path="/path/chromedriver",
 #     options=options
 # )
 
-s = Service(executable_path="/home/cain/PycharmProjects/youtube/undetected_chrome/chromedriver")
+s = Service(executable_path="/path/chromedriver")
 driver = webdriver.Chrome(service=s, options=options)
 
 try:
